@@ -40,6 +40,13 @@ namespace SingleResponsibilityPrinciple
                 return false;
             }
 
+            // New validation rule for minimum trade amount
+            if (tradeAmount < 1000)
+            {
+                logger.LogWarning("Trade amount below minimum threshold: '{0}'", tradeAmount);
+                return false;
+            }
+
             return true;
         }
     }
