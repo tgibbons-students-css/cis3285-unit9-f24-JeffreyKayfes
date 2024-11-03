@@ -47,6 +47,13 @@ namespace SingleResponsibilityPrinciple
                 return false;
             }
 
+            // New validation rule for maximum trade amount
+            if (tradeAmount > 1000000)
+            {
+                logger.LogWarning("Trade amount above maximum threshold: '{0}'", tradeAmount);
+                return false;
+            }
+
             return true;
         }
     }
