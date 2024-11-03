@@ -21,9 +21,9 @@ namespace SingleResponsibilityPrinciple
             }
             // data file to read from locally
             //Stream tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("Unit9_Trader.trades.txt");
-            
+
             // URL to read trade file from
-            string tradeURL = "http://faculty.css.edu/tgibbons/trades4.txt";
+            string tradeURL = "http://raw.githubusercontent.com/tgibbons-css/CIS3285_Unit9_F24/refs/heads/master/SingleResponsibilityPrinciple/trades.txt";
             //Two different URLs for Restful API
             //string restfulURL = "http://localhost:22359/api/TradeData";
             string restfulURL = "http://unit9trader.azurewebsites.net/api/TradeData";
